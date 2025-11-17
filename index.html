@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mon portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <h1>Développeur.se d'Applications Full-Stack</h1>
-    </header>
-
     <!-- MAIN -->
     <main class="main-block">
-      <!-- Navigation -->
-      <nav>
-        <a class="link" href="#about-me">À propos de moi</a>
-        <a class="link" href="#education">Formation</a>
-        <a class="link" href="#projects">Projets</a>
-        <a class="link" href="#contact">Contact</a>
-      </nav>
+      <!-- Hero section (image + header + navigation + about me) -->
+      <section class="hero">
+        <img
+          class="large-img"
+          src="./img/jellyfish.png"
+          alt="Composition artistique de méduses en pixel art"
+        />
 
-      <!-- Main picture -->
-      <img class="large-img" src="./img/cover.jpg" />
+        <div class="hero-content">
+          <!-- Navigation -->
+          <nav class="nav-pill" aria-label="Navigation principale">
+            <a class="link" href="#education">Formation</a>
+            <a class="link" href="#projects">Projets</a>
+            <a class="link" href="#contact">Contact</a>
+          </nav>
 
-      <!-- About me -->
-      <section id="about-me">
-        <div class="informations">
-          <img class="profile-image" src="./img/maphoto.jpeg" />
-
-          <div class="informations-text">
-            <p class="name">Elodie Desmoulin</p>
-            <p class="city">Ivry sur Seine</p>
-          </div>
+          <!-- About me -->
+          <section id="about-me">
+            <!-- HEADER -->
+            <header>
+              <h1>Développeur.se d'Applications Full-Stack</h1>
+            </header>
+            <div class="about-layout">
+              <a class="profile-button" href="./cv.pdf" target="_blank" rel="noreferrer">
+                <img
+                  class="profile-image"
+                  src="./img/maphoto.jpeg"
+                  alt="Portrait d'Elodie Desmoulin"
+                />
+                <span class="cv-label">Mon CV</span>
+              </a>
+              <div class="about-content">
+                <h3>Elodie Desmoulin</h3>
+                <p class="about-text">
+                  Après une formation de Développeur.se iOS, je souhaite orienter
+                  mes études vers le
+                  <span class="bold-text"
+                    >Développement d'Applications Full-Stack</span
+                  >
+                  afin d'être plus polyvalente et d'acquérir de nouvelles
+                  compétences. Je suis donc à la recherche d'une
+                  <span class="bold-text">alternance</span> dans ce domaine.
+                </p>
+                <p class="about-text">
+                  Je suis <span class="bold-text">persévérante</span>,
+                  <span class="bold-text">autonome</span> et
+                  <span class="bold-text">curieuse</span>.
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <h3>À propos de moi</h3>
-        <p class="about-text">
-          Après une formation de Développeur.se iOS, je souhaite orienter mes
-          études vers le
-          <span class="bold-text">Développement d'Applications Full-Stack</span>
-          afin d'être plus polyvalente et d'acquérir de nouvelles compétences.
-          Je suis donc à la recherche d'une
-          <span class="bold-text">alternance</span> dans ce domaine.
-        </p>
-        <p class="about-text">
-          Je suis <span class="bold-text">persévérante</span>,
-          <span class="bold-text">autonome</span> et
-          <span class="bold-text">curieuse</span>.
-        </p>
       </section>
 
       <!-- Education -->
@@ -60,8 +79,8 @@
         </p>
 
         <div class="technologies-logos">
-          <img src="./img/swift.png" />
-          <img src="./img/github.png" />
+          <img src="./img/swift.png" alt="Logo Swift" />
+          <img src="./img/github.png" alt="Logo GitHub" />
         </div>
 
         <p class="education-text">
@@ -69,9 +88,9 @@
         </p>
 
         <div class="technologies-logos">
-          <img src="./img/html.png" />
-          <img src="./img/css.png" />
-          <img src="./img/javascript.png" />
+          <img src="./img/html.png" alt="Logo HTML" />
+          <img src="./img/css.png" alt="Logo CSS" />
+          <img src="./img/javascript.png" alt="Logo JavaScript" />
         </div>
 
         <p class="education-text">
@@ -83,8 +102,8 @@
         </p>
 
         <div class="technologies-logos">
-          <img src="./img/mongodb.png" />
-          <img src="./img/react.png" />
+          <img src="./img/mongodb.png" alt="Logo MongoDB" />
+          <img src="./img/react.png" alt="Logo React" />
         </div>
       </section>
 
@@ -102,23 +121,31 @@
           <a
             href="https://github.com/Elodiedesmoulin/P12-Joiefull"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="project-images">
-              <img src="./img/joiefull-home.png" />
-              <img src="./img/joiefull-detail.png" />
+              <img
+                src="./img/joiefull-home.png"
+                alt="Écran d'accueil de l'application Joiefull"
+              />
+              <img
+                src="./img/joiefull-detail.png"
+                alt="Écran détaillé de l'application Joiefull"
+              />
             </div>
           </a>
 
           <div class="project-description">
             <h3>Joiefull</h3>
             <h4>Application de mode</h4>
-
-            <li>Parcourir les vêtements par catégories</li>
-            <li>Voir les détails de chaque article</li>
-            <li>Ajouter/retirer des articles aux favoris</li>
-            <li>Consulter les notations des autres utilisateurs</li>
-            <li>Noter et partager leurs impressions sur les articles</li>
-            <li>Rendre l'application accessible (VoiceOver)</li>
+            <ul>
+              <li>Parcourir les vêtements par catégories</li>
+              <li>Voir les détails de chaque article</li>
+              <li>Ajouter/retirer des articles aux favoris</li>
+              <li>Consulter les notations des autres utilisateurs</li>
+              <li>Noter et partager leurs impressions sur les articles</li>
+              <li>Rendre l'application accessible (VoiceOver)</li>
+            </ul>
           </div>
         </div>
 
@@ -126,27 +153,36 @@
           <a
             href="https://github.com/Elodiedesmoulin/P9-TravelVista"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="project-images">
-              <img src="./img/travelvista-home.png" />
-              <img src="./img/travelvista-detail.png" />
+              <img
+                src="./img/travelvista-home.png"
+                alt="Écran d'accueil de l'application Travel Vista"
+              />
+              <img
+                src="./img/travelvista-detail.png"
+                alt="Écran détaillé de l'application Travel Vista"
+              />
             </div>
           </a>
 
           <div class="project-description">
             <h3>Travel Vista</h3>
             <h4>Application d'agence de voyage</h4>
-
-            <li>Migration des écrans clés d'UIKit vers SwiftUI</li>
-            <li>
-              Les composants UIKit et SwiftUI coexistent de manière transparente
-            </li>
-            <li>Cohérence visuelle et comportementale totale</li>
-            <li>Code source nettoyé et modularisé lors de la migration</li>
-            <li>
-              Intégration de SwiftUI réalisée sans interruption des flux
-              existants
-            </li>
+            <ul>
+              <li>Migration des écrans clés d'UIKit vers SwiftUI</li>
+              <li>
+                Les composants UIKit et SwiftUI coexistent de manière
+                transparente
+              </li>
+              <li>Cohérence visuelle et comportementale totale</li>
+              <li>Code source nettoyé et modularisé lors de la migration</li>
+              <li>
+                Intégration de SwiftUI réalisée sans interruption des flux
+                existants
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -154,25 +190,33 @@
           <a
             href="https://github.com/Elodiedesmoulin/P8-Arista"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="project-images">
-              <img src="./img/arista-exercises.png" />
-              <img src="./img/arista-sleep.png" />
+              <img
+                src="./img/arista-exercises.png"
+                alt="Écran d'exercices de l'application Arista"
+              />
+              <img
+                src="./img/arista-sleep.png"
+                alt="Écran sommeil de l'application Arista"
+              />
             </div>
           </a>
 
           <div class="project-description">
             <h3>Arista</h3>
             <h4>Application de santé et de bien-être</h4>
-
-            <li>Ajouter ou supprimer un exercice</li>
-            <li>
-              Stocker localement les données des utilisateurs avec Core Data
-            </li>
-            <li>
-              Interface utilisateur/expérience utilisateur structurées et
-              améliorées, respectant les bonnes pratiques de conception mobile
-            </li>
+            <ul>
+              <li>Ajouter ou supprimer un exercice</li>
+              <li>
+                Stocker localement les données des utilisateurs avec Core Data
+              </li>
+              <li>
+                Interface utilisateur/expérience utilisateur structurées et
+                améliorées, respectant les bonnes pratiques de conception mobile
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -180,24 +224,32 @@
           <a
             href="https://github.com/Elodiedesmoulin/P6-VitesseRH"
             target="_blank"
+            rel="noreferrer"
           >
             <div class="project-images">
-              <img src="./img/vitesserh-home.png" />
-              <img src="./img/vitesserh-detail.png" />
+              <img
+                src="./img/vitesserh-home.png"
+                alt="Écran d'accueil de l'application VitesseRH"
+              />
+              <img
+                src="./img/vitesserh-detail.png"
+                alt="Écran détaillé de l'application VitesseRH"
+              />
             </div>
           </a>
 
           <div class="project-description">
             <h3>VitesseRH</h3>
             <h4>Application de gestion des candidats</h4>
-
-            <li>Liste de candidats chargée depuis une API externe</li>
-            <li>
-              Ajouter, modifier et supprimer les informations des candidats
-            </li>
-            <li>Marquer des candidats comme favoris</li>
-            <li>Rechercher et filtrer les candidats</li>
-            <li>Gestion appropriée des erreurs et des états de chargement</li>
+            <ul>
+              <li>Liste de candidats chargée depuis une API externe</li>
+              <li>
+                Ajouter, modifier et supprimer les informations des candidats
+              </li>
+              <li>Marquer des candidats comme favoris</li>
+              <li>Rechercher et filtrer les candidats</li>
+              <li>Gestion appropriée des erreurs et des états de chargement</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -207,22 +259,26 @@
 
         <div class="contact-block">
           <div class="contact-line">
-            <img src="./img/mail.jpg" alt="" />
+            <img src="./img/mail.jpg" alt="Icône e-mail" />
             <a href="mailto:elodie.dsmln@proton.me">elodie.dsmln@proton.me</a>
           </div>
 
-          <div target="_blank" class="contact-line">
-            <img src="./img/linkedin.png" alt="" />
+          <div class="contact-line">
+            <img src="./img/linkedin.png" alt="Icône LinkedIn" />
             <a
               href="https://fr.linkedin.com/in/elodie-desmoulin-7170a3366"
               target="_blank"
+              rel="noreferrer"
               >https://www.linkedin.com/</a
             >
           </div>
 
           <div class="contact-line">
-            <img src="./img/github.png" alt="" />
-            <a href="https://github.com/Elodiedesmoulin" target="_blank"
+            <img src="./img/github.png" alt="Icône GitHub" />
+            <a
+              href="https://github.com/Elodiedesmoulin"
+              target="_blank"
+              rel="noreferrer"
               >https://github.com/</a
             >
           </div>

@@ -312,6 +312,17 @@ main > section:first-of-type {
   gap: 24px;
 }
 
+.project-images.column {
+  flex-direction: column;
+  width: 460px;
+  max-width: 100%;
+}
+
+.project-images.column img {
+  width: 100%;
+  height: auto;
+}
+
 .project-images img {
   width: 220px;
   height: 460px;
